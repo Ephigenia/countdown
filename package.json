@@ -26,6 +26,10 @@
   "bugs": {
     "url": "https://github.com/Ephigenia/countdown/issues"
   },
+  "engines": {
+    "node": "8.9.4",
+    "npm": "5.6.0"
+  },
   "scripts": {
     "start": "http-server public",
     "test": "echo 'no tests defined so far && exit 1'"
