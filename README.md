@@ -2,11 +2,21 @@
 
 Big countdown which is fully customizable via GET parameters written in pure simple vanilla javascript perfect to run in a dashboard display.
 
+# Features
+
+![Screenshot of Countdown in Action 2018-01-22](https://raw.githubusercontent.com/Ephigenia/countdown/master/screenshot.png)
+
+- Countdown to a specific date & time including days, hours, minutes, seconds
+- Custom title & finished message
+- Big Responsive full-width display
+- Variable Theme
+- Dead Simple Code
+
 # Demo
 
-The latest version of this is running on http://simple-countdown.herokuapp.com/ where you set you’re own configuration via get parameters.  
+The latest version of this is running on http://simple-countdown.herokuapp.com/ where you set you’re own configuration via get parameters.
 
-For example:  
+For example:
 http://simple-countdown.herokuapp.com/?to=2018-01-31T20:15:00+01:00&title=Big%20Pary&finishedText=Party!
 
 # Start
