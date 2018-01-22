@@ -4,8 +4,10 @@ Big countdown which is fully customizable via GET parameters written in pure sim
 
 # Demo
 
-The latest version of this is running on http://simple-countdown.herokuapp.com/ where you set you’re own configuration via get parameters.
-For example: http://simple-countdown.herokuapp.com/?to=2018-01-31T20:15:00+01:00&title=Big%20Pary&finishedText=Party!
+The latest version of this is running on http://simple-countdown.herokuapp.com/ where you set you’re own configuration via get parameters.  
+
+For example:  
+http://simple-countdown.herokuapp.com/?to=2018-01-31T20:15:00+01:00&title=Big%20Pary&finishedText=Party!
 
 # Start
 
