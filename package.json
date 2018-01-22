@@ -1,0 +1,37 @@
+{
+  "name": "@ephigenia/countdown",
+  "version": "0.0.1",
+  "contributors": [
+    {
+      "name": "Marcel Eichner",
+      "email": "marcel.eichner@ephigenia.de"
+    }
+  ],
+  "author": "Ephigenia M. Eichner",
+  "license": "MIT",
+  "description": "Big countdown which is fully customizable via GET parameters written in pure simple vanilla javascript perfect to run in a dashboard display",
+  "keywords": [
+    "countdown",
+    "display",
+    "simple",
+    "responsive",
+    "big",
+    "dashboard",
+    "wallboard"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Ephigenia/countdown.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ephigenia/countdown/issues"
+  },
+  "scripts": {
+    "start": "http-server public",
+    "test": "echo 'no tests defined so far && exit 1'"
+  },
+  "dependencies": {
+    "http-server": "^0.11.1"
+  },
+  "devDependencies": {}
+}
