@@ -65,6 +65,8 @@ Example X config file:
 @xset s noblank
 
 # hide mouse cursor
+# requires "unclutter" to be installed
+#   sudo apt-get install unclutter
 @unclutter -idle 0
 
 # read about supported comamnd line arguemnts:
