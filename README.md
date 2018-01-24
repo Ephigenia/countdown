@@ -17,7 +17,7 @@ Big countdown which is fully customizable via GET parameters written in pure sim
 The latest version of this is running on http://simple-countdown.herokuapp.com/ where you set you’re own configuration via get parameters.
 
 For example:
-http://simple-countdown.herokuapp.com/?to=2018-01-31T20:15:00+01:00&title=Big%20Pary&finishedText=Party!
+http://simple-countdown.herokuapp.com/?to=2018-01-31T20:15:00+01:00&title=Big%20Party&finishedText=Party!
 
 # Start
 
@@ -28,7 +28,7 @@ http://simple-countdown.herokuapp.com/?to=2018-01-31T20:15:00+01:00&title=Big%20
 
 The countdown target date and title as well as the used theme can be changed via GET parameters of the URL used:
 
-Example: http://simple-countdown.herokuapp.com/?to=2018-01-31T20:15:00+01:00&title=Big%20Pary&finishedText=Party!&theme=winter&themeFinished=summer
+Example: http://simple-countdown.herokuapp.com/?to=2018-01-31T20:15:00+01:00&title=Big%20Party&finishedText=Party!&theme=winter&themeFinished=summer
 
 | GET variable name	| example                   |	description                                                                                                            |
 |-------------------|---------------------------|------------------------------------------------------------------------------------------------------------------------|
@@ -64,9 +64,12 @@ Example X config file:
 @xset -dpms
 @xset s noblank
 
+# hide mouse cursor
+@unclutter -idle 0
+
 # read about supported comamnd line arguemnts:
 # https://peter.sh/experiments/chromium-command-line-switches/
-@chromium-browser --noerrdialogs --disable-session-crashed-bubble --disable-infobars --kiosk http://simple-countdown.herokuapp.com/?to=2018-01-31T20:15:00+01:00&title=Big%20Pary&finishedText=Party!&theme=winter&themeFinished=summer
+@chromium-browser --noerrdialogs --disable-session-crashed-bubble --disable-infobars --kiosk http://simple-countdown.herokuapp.com/?to=2018-01-31T20:15:00+01:00&title=Big%20Party&finishedText=Party!&theme=winter&themeFinished=summer
 ```
 
 # Ideas
