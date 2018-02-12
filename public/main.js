@@ -34,7 +34,7 @@ setInterval(() => {
   var diff = config.to - now;
   var days = moment(config.to).diff(moment(), 'days');
   var countdown = '';
-  
+
   // with days?
   if (days > 0) {
     if (days > 999) {

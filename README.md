@@ -16,8 +16,8 @@ Big countdown which is fully customizable via GET parameters written in pure sim
 
 The latest version of this is running on http://simple-countdown.herokuapp.com/ where you set you’re own configuration via get parameters.
 
-For example:
-http://simple-countdown.herokuapp.com/?to=2018-01-31T20:15:00+01:00&title=Big%20Party&finishedText=Party!
+Example showing a countdown to 20:15 in Berlin/Europe Timezone:
+http://simple-countdown.herokuapp.com/?to=2018-01-31T19:15:00+01:00&title=Big%20Party&finishedText=Dance!
 
 # Start
 
@@ -26,17 +26,28 @@ http://simple-countdown.herokuapp.com/?to=2018-01-31T20:15:00+01:00&title=Big%20
 
 # Configuration
 
-The countdown target date and title as well as the used theme can be changed via GET parameters of the URL used:
+The countdown target date, title and other stuff can be changed with GET parameters:
 
-Example: http://simple-countdown.herokuapp.com/?to=2018-01-31T20:15:00+01:00&title=Big%20Party&finishedText=Party!&theme=winter&themeFinished=summer
+Example: http://simple-countdown.herokuapp.com/?to=2018-01-31T19:15:00+01:00&title=Big%20Party&finishedText=Dance&theme=winter&themeFinished=summer
 
-| GET variable name	| example                   |	description                                                                                                            |
-|-------------------|---------------------------|------------------------------------------------------------------------------------------------------------------------|
-| to	              | `2018-01-31T20:15:00+01:00` | the target date & time in ISO-8601 format with timezone offset                                                         |
+| GET variable name	| example                     | description                                                                                                            |
+|-------------------|-----------------------------|------------------------------------------------------------------------------------------------------------------------|
+| to	            | `2018-01-31T19:15:00+01:00` | the target date & time in ISO-8601 format with optional timezone offset                                                |
 | title             | `Next Show: Amsterdam`      | Optional title which is displayed above the countdown                                                                  |
-| theme             | `monokai`                   | One of the following options: `dark`, `winter`, `summer`, `monokai` defining the color-scheme used (default "monokai") |
+| theme             | `monokai`                   | name of the theme that should be used when countdown is not reached (default: `monokai`)                               |
 | finishedText      | `Now Live`                  | The text that should be displayed once the date & time counting to is reached, defaults to `00:00:00`                  |
 | finishedTheme     | `summer`                    | Theme that should be used once the countdown date & time is reached (default: `summer`)                                |
+
+# Themes
+
+There are some themes that can be used in the `theme` and `finishedTheme` parameters. Click on the name to see a preview:
+
+- [dark](http://simple-countdown.herokuapp.com/?to=2023-01-31T19:15:00+01:00&title=Countdown%20Title%20Value&theme=dark)
+- [monokai](http://simple-countdown.herokuapp.com/?to=2023-01-31T19:15:00+01:00&title=Countdown%20Title%20Value&theme=monokai)
+- [summer](http://simple-countdown.herokuapp.com/?to=2023-01-31T19:15:00+01:00&title=Countdown%20Title%20Value&theme=summer)
+- [winter](http://simple-countdown.herokuapp.com/?to=2023-01-31T19:15:00+01:00&title=Countdown%20Title%20Value&theme=winter)
+
+Themes are right now just appended in the `styles.css` file.
 
 # Deployment
 
@@ -71,9 +82,9 @@ Example X config file:
 
 # read about supported comamnd line arguemnts:
 # https://peter.sh/experiments/chromium-command-line-switches/
-@chromium-browser --noerrdialogs --disable-session-crashed-bubble --disable-infobars --kiosk http://simple-countdown.herokuapp.com/?to=2018-01-31T20:15:00+01:00&title=Big%20Party&finishedText=Party!&theme=winter&themeFinished=summer
+@chromium-browser --noerrdialogs --disable-session-crashed-bubble --disable-infobars --kiosk http://simple-countdown.herokuapp.com/?to=2018-01-31T19:15:00+01:00&title=Big%20Party&finishedText=Dance&theme=winter&themeFinished=summer
 ```
 
 # Ideas
 
-- [ ] add `locale` parameter for localized date
+- [ ] add `locale` parameter for long date format in preferred locale (using moment.js locale)
