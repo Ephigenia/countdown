@@ -82,7 +82,7 @@ Example X config file:
 
 # read about supported comamnd line arguemnts:
 # https://peter.sh/experiments/chromium-command-line-switches/
-@chromium-browser --noerrdialogs --disable-session-crashed-bubble --disable-infobars --kiosk http://simple-countdown.herokuapp.com/?to=2018-01-31T19:15:00+01:00&title=Big%20Party&finishedText=Dance&theme=winter&themeFinished=summer
+@chromium-browser --noerrdialogs --incognito --disable-infobars --kiosk  http://simple-countdown.herokuapp.com/?to=2018-01-31T19:15:00+01:00&title=Big%20Party&finishedText=Dance&theme=winter&themeFinished=summer
 ```
 
 # Ideas
