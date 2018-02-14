@@ -5,7 +5,8 @@ var config = {
   finishedText: '00:00:00',
   finishedTheme: 'summer',
   dateFormat: 'LLLL',
-  updateInterval: 1000
+  updateInterval: 1000,
+  locale: 'en_US',
 }
 
 // parse GET parameters and use them
@@ -14,6 +15,7 @@ config.title = params.get('title') || config.title;
 config.theme = params.get('theme') || config.theme;
 config.finishedTheme = params.get('finishedTheme') || config.finishedTheme;
 config.finishedText = params.get('finishedText') || config.finishedText;
+config.locale = params.get('locale') || config.locale;
 if (params.get('to')) {
   config.to = moment(params.get('to')).toDate();
 }
@@ -24,6 +26,7 @@ function setTheme(name) {
 }
 
 setTheme(config.theme);
+moment.locale(config.locale);
 
 // update title & target date display
 document.getElementById('title').innerHTML = config.title;

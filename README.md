@@ -11,13 +11,14 @@ Big countdown which is fully customizable via GET parameters written in pure sim
 - Big Responsive full-width display
 - Variable Theme
 - Dead Simple Code
+- locale aware time & date formats using momentjs
 
 # Demo
 
 The latest version of this is running on http://simple-countdown.herokuapp.com/ where you set you’re own configuration via get parameters.
 
-Example showing a countdown to 20:15 in Berlin/Europe Timezone:
-http://simple-countdown.herokuapp.com/?to=2018-01-31T19:15:00+01:00&title=Big%20Party&finishedText=Dance!
+Example showing a countdown to 20:15 in Berlin/Europe Timezone in german language:
+http://simple-countdown.herokuapp.com/?to=2018-01-31T19:15:00+01:00&title=Big%20Party&finishedText=Dance!&locale=de_DE
 
 # Start
 
@@ -30,13 +31,14 @@ The countdown target date, title and other stuff can be changed with GET paramet
 
 Example: http://simple-countdown.herokuapp.com/?to=2018-01-31T19:15:00+01:00&title=Big%20Party&finishedText=Dance&theme=winter&themeFinished=summer
 
-| GET variable name	| example                     | description                                                                                                            |
-|-------------------|-----------------------------|------------------------------------------------------------------------------------------------------------------------|
-| to	            | `2018-01-31T19:15:00+01:00` | the target date & time in ISO-8601 format with optional timezone offset                                                |
-| title             | `Next Show: Amsterdam`      | Optional title which is displayed above the countdown                                                                  |
-| theme             | `monokai`                   | name of the theme that should be used when countdown is not reached (default: `monokai`)                               |
-| finishedText      | `Now Live`                  | The text that should be displayed once the date & time counting to is reached, defaults to `00:00:00`                  |
-| finishedTheme     | `summer`                    | Theme that should be used once the countdown date & time is reached (default: `summer`)                                |
+| GET variable name	| example                     | description                                                                                                                                                                                   |
+|-------------------|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| to	            | `2018-01-31T19:15:00+01:00` | the target date & time in ISO-8601 format with optional timezone offset                                                                                                                       |
+| title             | `Next Show: Amsterdam`      | Optional title which is displayed above the countdown                                                                                                                                         |
+| theme             | `monokai`                   | name of the theme that should be used when countdown is not reached (default: `monokai`)                                                                                                      |
+| locale            | `de_DE`                     | Single locale string for use when formatting full date & time, see [moment locales](https://github.com/moment/moment/tree/develop/locale) for a list of supported locales, (default: `en_US`) |
+| finishedText      | `Now Live`                  | The text that should be displayed once the date & time counting to is reached, defaults to `00:00:00`                                                                                         |
+| finishedTheme     | `summer`                    | Theme that should be used once the countdown date & time is reached (default: `summer`)                                                                                                       |
 
 # Themes
 
@@ -82,9 +84,5 @@ Example X config file:
 
 # read about supported comamnd line arguemnts:
 # https://peter.sh/experiments/chromium-command-line-switches/
-@chromium-browser --noerrdialogs --incognito --disable-infobars --kiosk  http://simple-countdown.herokuapp.com/?to=2018-01-31T19:15:00+01:00&title=Big%20Party&finishedText=Dance&theme=winter&themeFinished=summer
+@chromium-browser --noerrdialogs --incognito --disable-infobars --kiosk  http://simple-countdown.herokuapp.com/?to=2018-01-31T19:15:00+01:00&title=Big%20Party&finishedText=Dance&theme=winter&themeFinished=summer&locale=de_DE
 ```
-
-# Ideas
-
-- [ ] add `locale` parameter for long date format in preferred locale (using moment.js locale)
