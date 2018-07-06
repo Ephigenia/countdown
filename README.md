@@ -20,6 +20,18 @@ The latest version of this is running on http://simple-countdown.herokuapp.com/ 
 Example showing a countdown to 20:15 in Berlin/Europe Timezone in german language:
 http://simple-countdown.herokuapp.com/?to=2018-01-31T19:15:00+01:00&title=Big%20Party&finishedText=Dance!&locale=de_DE
 
+# Docker
+
+You can run the whole thing as a docker container
+
+    docker build --pull --no-cache -t countdown:latest .
+
+Then run the docker container
+
+    docker run -p 8080:80 --rm -it countdown:latest
+
+This will expose the nginx service on: http://localhost:8080
+
 # Start
 
     npm install
