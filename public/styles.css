@@ -66,6 +66,59 @@ body.theme-monokai #countdown {
   color: #FD971F;
 }
 
+body.theme-49ers {
+  background: #a00;
+  text-shadow: 5px 5px 0px #000;
+}
+body.theme-49ers #target,
+body.theme-49ers #title {
+  color: #B3995D;
+}
+body.theme-49ers #countdown {
+  color: #fff;
+}
+
+
+body.theme-china {
+  background: #de2910;
+}
+body.theme-china #countdown,
+body.theme-china #target,
+body.theme-china #title {
+  color: #ffde00;
+}
+
+
+body.theme-europe {
+  background: #039;
+}
+body.theme-europe #countdown,
+body.theme-europe #target,
+body.theme-europe #title {
+  color: #ffcc00;
+}
+
+
+body.theme-cola {
+  background: #f40009;
+}
+body.theme-cola #countdown,
+body.theme-cola #target,
+body.theme-cola #title {
+  color: #fff;
+}
+
+
+body.theme-usa {
+  background: #fff;
+}
+body.theme-usa #countdown {
+  color: #b22234;
+}
+body.theme-usa #target,
+body.theme-usa #title {
+  color: #3c3b6e;
+}
 
 body.theme-winter {
   background: #001D29;
