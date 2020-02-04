@@ -57,15 +57,15 @@ Example: http://simple-countdown.herokuapp.com/?to=2018-01-31T19:15:00+01:00&ti
 
 There are some themes that can be used in the `theme` and `finishedTheme` parameters. Click on the name to see a preview:
 
-- [49ers](http://simple-countdown.herokuapp.com/?to=2023-01-31T19:15:00+01:00&title=Countdown%20Title%20Value&theme=49ers)
-- [china](http://simple-countdown.herokuapp.com/?to=2023-01-31T19:15:00+01:00&title=Countdown%20Title%20Value&theme=china)
-- [cola](http://simple-countdown.herokuapp.com/?to=2023-01-31T19:15:00+01:00&title=Countdown%20Title%20Value&theme=cola)
-- [dark](http://simple-countdown.herokuapp.com/?to=2023-01-31T19:15:00+01:00&title=Countdown%20Title%20Value&theme=dark)
-- [europe](http://simple-countdown.herokuapp.com/?to=2023-01-31T19:15:00+01:00&title=Countdown%20Title%20Value&theme=europe)
-- [monokai](http://simple-countdown.herokuapp.com/?to=2023-01-31T19:15:00+01:00&title=Countdown%20Title%20Value&theme=monokai)
-- [summer](http://simple-countdown.herokuapp.com/?to=2023-01-31T19:15:00+01:00&title=Countdown%20Title%20Value&theme=summer)
-- [usa](http://simple-countdown.herokuapp.com/?to=2023-01-31T19:15:00+01:00&title=Countdown%20Title%20Value&theme=usa)
-- [winter](http://simple-countdown.herokuapp.com/?to=2023-01-31T19:15:00+01:00&title=Countdown%20Title%20Value&theme=winter)
+- [49ers](http://simple-countdown.herokuapp.com/?to=2020-10-31T18:00:00+01:00&title=Countdown%20Title%20Value&theme=49ers)
+- [china](http://simple-countdown.herokuapp.com/?to=2020-10-31T18:00:00+01:00&title=Countdown%20Title%20Value&theme=china)
+- [cola](http://simple-countdown.herokuapp.com/?to=2020-10-31T18:00:00+01:00&title=Countdown%20Title%20Value&theme=cola)
+- [dark](http://simple-countdown.herokuapp.com/?to=2020-10-31T18:00:00+01:00&title=Countdown%20Title%20Value&theme=dark)
+- [europe](http://simple-countdown.herokuapp.com/?to=2020-10-31T18:00:00+01:00&title=Countdown%20Title%20Value&theme=europe)
+- [monokai](http://simple-countdown.herokuapp.com/?to=2020-10-31T18:00:00+01:00&title=Countdown%20Title%20Value&theme=monokai)
+- [summer](http://simple-countdown.herokuapp.com/?to=2020-10-31T18:00:00+01:00&title=Countdown%20Title%20Value&theme=summer)
+- [usa](http://simple-countdown.herokuapp.com/?to=2020-10-31T18:00:00+01:00&title=Countdown%20Title%20Value&theme=usa)
+- [winter](http://simple-countdown.herokuapp.com/?to=2020-10-31T18:00:00+01:00&title=Countdown%20Title%20Value&theme=winter)
 
 Themes are right now just appended in the `styles.css` file.
 
