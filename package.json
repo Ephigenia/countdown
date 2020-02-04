@@ -36,8 +36,8 @@
     "start": "http-server public",
     "test": "echo 'no tests defined so far' && exit 0"
   },
-  "dependencies": {
-    "http-server": "^0.11.1"
-  },
-  "devDependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "^0.12.1"
+  }
 }
