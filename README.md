@@ -9,6 +9,7 @@ Big countdown which is fully customizable via GET parameters written in pure sim
 - Countdown to a specific date & time including days, hours, minutes, seconds
 - Custom title & finished message
 - Big Responsive full-width display
+- simple web-app-capable for fullscreen on iOS
 - Variable Theme
 - Dead Simple Code
 - locale aware time & date formats using momentjs
@@ -18,7 +19,7 @@ Big countdown which is fully customizable via GET parameters written in pure sim
 The latest version of this is running on http://simple-countdown.herokuapp.com/ where you set you’re own configuration via get parameters.
 
 Example showing a countdown to 20:15 in Berlin/Europe Timezone in german language:
-http://simple-countdown.herokuapp.com/?to=2018-01-31T19:15:00+01:00&title=Big%20Party&finishedText=Dance!&locale=de_DE
+http://simple-countdown.herokuapp.com/?to=2020-10-31T19:15:00+01:00&title=Halloween&finishedText=Scary%20Party&locale=de_DE
 
 # Docker
 
