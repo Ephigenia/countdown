@@ -30,6 +30,9 @@ moment.locale(config.locale);
 
 // update title & target date display
 document.getElementById('title').innerHTML = config.title;
+if (config.title) {
+  document.title = 'Countdown - ' + config.title;
+}
 document.getElementById('target').innerHTML = moment(config.to).format(config.dateFormat);
 
 setInterval(() => {
