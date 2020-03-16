@@ -46,7 +46,7 @@ setInterval(() => {
     if (days > 999) {
       days = 999;
     }
-    countdown = days + 'd ';
+    countdown = days + 'd&#8199;';
     document.getElementById('countdown').classList.className = '';
   } else {
     document.getElementById('countdown').classList.className = 'no-days';
@@ -54,7 +54,7 @@ setInterval(() => {
 
   // countdown target date & time reached?
   if (diff > 0) {
-    countdown += moment(diff).utc().format('HH:mm:ss');
+    countdown += moment(diff).utc().format('HH:mm:ss').replace(' ', '&#8199;');
   } else {
     setTheme(config.finishedTheme);
     countdown = config.finishedText;
