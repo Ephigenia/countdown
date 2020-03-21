@@ -23,6 +23,7 @@
     "type": "git",
     "url": "git@github.com:Ephigenia/countdown.git"
   },
+  "funding": "http://github.com/sponsors/Ephigenia",
   "bugs": {
     "url": "https://github.com/Ephigenia/countdown/issues"
   },
