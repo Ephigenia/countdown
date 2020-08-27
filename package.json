@@ -38,6 +38,7 @@
     "postversion": "git push && git push --tags",
     "preversion": "npm run test",
     "start": "http-server public",
+    "start:dev": "http-server -c 0 public",
     "test": "echo 'no tests defined so far' && exit 0"
   },
   "dependencies": {},

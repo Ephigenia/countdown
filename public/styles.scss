@@ -1,0 +1,179 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: table;
+}
+
+.container {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+body {
+  text-align: center;
+  font-family: "Roboto", Sans-Serif;
+  font-weight: 400;
+}
+
+strong, #countdown {
+  font-weight: 900;
+}
+
+em, #title {
+  font-style: italic;
+  font-weight: 400;
+}
+
+body {
+  > footer, > header {
+    position: absolute;
+    top: 10px;
+    font-size: 1vw;
+    a {
+      color: inherit;
+      padding: 0 5px;
+    }
+  }
+  > header {
+    left: 10px;
+  }
+  > footer {
+    right: 10px;
+    text-align: right;
+  }
+}
+
+#title {
+  font-size: 5vw;
+}
+#target {
+  font-size: 2.5vw;
+}
+#countdown {
+  font-size: 15vw;
+}
+#countdown .no-days {
+  font-size: 20vw;
+}
+
+$theme-colors:(
+  'default': (
+    'primary': #000000,
+    'secondary': #b9b9b9,
+    'background': #fff
+  ),
+  'autumn': (
+    'primary': #f77f00,
+    'secondary': #d62828,
+    'background': #003049,
+  ),
+  'white': (
+    'primary': #444444,
+    'secondary': #b9b9b9,
+    'background': #fff
+  ),
+  'dark': (
+    'primary': #ffffff,
+    'secondary': #b9b9b9,
+    'background': #000,
+  ),
+  'amber': (
+    'primary': #ffd400,
+    'secondary': #aa8d00,
+    'background': #1c1800,
+  ),
+  'ice': (
+    'primary': #1f7a8c,
+    'secondary': #022b3a,
+    'background': #bfdbf7,
+  ),
+  'matrix': (
+    'primary': #00FF41,
+    'secondary': #008F11,
+    'background': #0D0208,
+  ),
+  'monokai': (
+    'primary': #FD971F,
+    'seconary': #49483E,
+    'background': #272822
+  ),
+  '49ers': (
+    'primary': #fff,
+    'seconary': #B3995D,
+    'background':  #a00
+  ),
+  'china': (
+    'primary': #ffde00,
+    'secondary': #ffde00,
+    'background': #de2910
+  ),
+  'red': (
+    'primary': #ff0000,
+    'secondary': #ff0000,
+    'background': #8b0404
+  ),
+  'green': (
+    'primary': #00ff00,
+    'secondary': #20cf20,
+    'background': #216821
+  ),
+  'summer': (
+    'primary': #e26d5c,
+    'secondary': #ffe1a8,
+    'background': #c9cba3
+  ),
+  'fire': (
+    'primary': #c36f09,
+    'secondary': #f4e409,
+    'background': #710000
+  ),
+  'pink': (
+    'primary': #f08080,
+    'secondary': #f4978e,
+    'background': #fbc4ab
+  ),
+  'europe': (
+    'primary': #ffcc00,
+    'secondary': #039,
+    'background': #039
+  ),
+  'cola': (
+    'primary': #fff,
+    'secondary': #fff,
+    'background': #f40009
+  ),
+  'pepsi': (
+    'primary': #C9002B,
+    'secondary': #004B93,
+    'background': #fff
+  ),
+  'usa': (
+    'primary': #b22234,
+    'secondary': #3c3b6e,
+    'background': #fff
+  )
+);
+
+
+body.theme-49ers #countdown {
+  text-shadow: 5px 5px 0px #000;
+}
+
+@function theme-color($key: 'default', $variant: 'primary') {
+  $map: map-get($theme-colors, $key);
+  @return map-get($map, $variant);
+}
+
+@each $name, $val in $theme-colors {
+  body.theme-#{$name} {
+    background: theme-color($name, 'background');
+    #countdown { color: theme-color($name, 'primary')};
+    #title, #target { color: theme-color($name, 'secondary')};
+    a { color: theme-color($name, 'primary')};
+  };
+}

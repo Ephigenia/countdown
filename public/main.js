@@ -1,3 +1,26 @@
+const themes = [
+  '49ers',
+  'amber',
+  'autumn',
+  'china',
+  'cola',
+  'dark',
+  'default',
+  'europe',
+  'fire',
+  'green',
+  'ice',
+  'matrix',
+  'monokai',
+  'pepsi',
+  'pink',
+  'red',
+  'summer',
+  'usa',
+  'white',
+  'winter',
+].sort((a, b) => a - b);
+
 var config = {
   title: '',
   theme: 'default',
@@ -85,6 +108,16 @@ if (config.title) {
   document.title = 'Countdown - ' + config.title;
 }
 document.getElementById('target').innerHTML = moment(config.to).format(config.dateFormat);
+
+var headerElm = document.body.querySelector('body > header');
+for(var i = 0; i < themes.length; i++) {
+  var themeName = themes[i];
+  var a = document.createElement('a');
+  var link = document.createTextNode(themeName);
+  a.appendChild(link);
+  a.addEventListener('click', setTheme.bind(this, themeName));
+  headerElm.appendChild(a);
+}
 
 setInterval(() => {
   var now = moment();
