@@ -1,7 +1,7 @@
 var config = {
   title: '',
   theme: 'monokai',
-  to: new Date(2030, 11, 24),
+  to: new Date((new Date()).getFullYear(), (new Date()).getMonth() + 1, (new Date).getDate()),
   finishedText: '00:00:00',
   finishedTheme: 'summer',
   dateFormat: 'LLLL',
