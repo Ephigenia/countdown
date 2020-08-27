@@ -134,12 +134,12 @@ $theme-colors:(
   ),
   'pink': (
     'primary': #f08080,
-    'secondary': #f4978e,
+    'secondary': #ff6d60,
     'background': #fbc4ab
   ),
   'europe': (
     'primary': #ffcc00,
-    'secondary': #039,
+    'secondary': #ffcc00,
     'background': #039
   ),
   'cola': (
@@ -159,11 +159,6 @@ $theme-colors:(
   )
 );
 
-
-body.theme-49ers #countdown {
-  text-shadow: 5px 5px 0px #000;
-}
-
 @function theme-color($key: 'default', $variant: 'primary') {
   $map: map-get($theme-colors, $key);
   @return map-get($map, $variant);
@@ -176,4 +171,14 @@ body.theme-49ers #countdown {
     #title, #target { color: theme-color($name, 'secondary')};
     a { color: theme-color($name, 'primary')};
   };
+}
+
+body.theme-amber #countdown {
+  text-shadow: 0px 0px 0.125em theme-color('amber', 'primary');
+}
+body.theme-fire #countdown {
+  text-shadow: 0px 0px 0.0625em theme-color('fire', 'secondary');
+}
+body.theme-49ers #countdown {
+  text-shadow: 5px 5px 0px #000;
 }
