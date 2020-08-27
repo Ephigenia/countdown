@@ -21,6 +21,15 @@ The latest version of this is running on http://simple-countdown.herokuapp.com/ 
 Example showing a countdown to 20:15 in Berlin/Europe Timezone in german language:
 http://simple-countdown.herokuapp.com/?to=2020-10-31T19:15:00+01:00&title=Halloween&finishedText=Scary%20Party&locale=de_DE
 
+# Key-Binding
+
+- <kbd>right</kbd> next theme
+- <kbd>left</kbd> previous theme
+- <kbd>up</kbd> increase target time by one hour
+- <kbd>down</kbd> decrease target time by one hour
+- <kbd>shift</kbd>+<kbd>up</kbd> increase target time by one hour
+- <kbd>shift</kbd>+<kbd>down</kbd> decrease target time by one hour
+
 # Docker
 
 You can run the whole thing as a docker container

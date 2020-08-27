@@ -1,6 +1,6 @@
 var config = {
   title: '',
-  theme: 'monokai',
+  theme: 'default',
   to: new Date((new Date()).getFullYear(), (new Date()).getMonth() + 1, (new Date).getDate()),
   finishedText: '00:00:00',
   finishedTheme: 'summer',
@@ -22,7 +22,42 @@ if (params.get('to')) {
 
 // set theme
 function setTheme(name) {
+  config.theme = name;
   document.body.className = 'theme-' + name;
+}
+function nextTheme() {
+  var index = themes.indexOf(config.theme);
+  if (index > themes.lenggth) {
+    index = 0;
+  } else {
+    index++;
+  }
+  setTheme(themes[index]);
+}
+function previousTheme() {
+  var index = themes.indexOf(config.theme);
+  if (index === 0) {
+    index = themes.length - 1;
+  } else {
+    index--;
+  }
+  setTheme(themes[index]);
+}
+
+document.onkeydown = function(e) {
+  e = e || window.event;
+  var shift = e.shiftKey;
+  switch(e.keyCode) {
+    case 37:
+      // left arrow
+      nextTheme();
+      break;
+    case 39:
+      // right arrow
+      nextTheme();
+      break;
+  }
+  return true;
 }
 
 setTheme(config.theme);
