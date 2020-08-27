@@ -32,6 +32,9 @@
     "npm": "5.6.0"
   },
   "scripts": {
+    "build": "npm run -s build:css",
+    "build:css": "node-sass --include-path public --output public",
+    "watch": "npm run -s build:css -- --watch public",
     "postversion": "git push && git push --tags",
     "preversion": "npm run test",
     "start": "http-server public",
@@ -39,6 +42,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "http-server": "^0.12.1"
+    "http-server": "^0.12.3",
+    "node-sass": "4.14.1"
   }
 }

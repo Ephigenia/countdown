@@ -1,0 +1,129 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+body {
+  display: table; }
+
+.container {
+  display: table-cell;
+  vertical-align: middle; }
+
+body {
+  text-align: center;
+  font-family: "Roboto", Sans-Serif;
+  font-weight: 400; }
+
+strong, #countdown {
+  font-weight: 900; }
+
+em, #title {
+  font-style: italic;
+  font-weight: 400; }
+
+body > footer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-align: right;
+  font-size: 1vw; }
+
+body > footer a {
+  color: inherit; }
+
+#title {
+  font-size: 5vw; }
+
+#target {
+  font-size: 3.25vw; }
+
+#countdown {
+  font-size: 15vw; }
+
+#countdown .no-days {
+  font-size: 20vw; }
+
+body.theme-dark {
+  background: #222;
+  color: #fff; }
+
+body.theme-dark #target {
+  color: #b9b9b9;
+  font-size: 2.5vw; }
+
+body.theme-monokai {
+  background: #272822;
+  color: #F8F8F0; }
+
+body.theme-monokai #target {
+  color: #49483E; }
+
+body.theme-monokai #countdown {
+  color: #FD971F; }
+
+body.theme-49ers {
+  background: #a00;
+  text-shadow: 5px 5px 0px #000; }
+
+body.theme-49ers #target,
+body.theme-49ers #title {
+  color: #B3995D; }
+
+body.theme-49ers #countdown {
+  color: #fff; }
+
+body.theme-china {
+  background: #de2910; }
+
+body.theme-china #countdown,
+body.theme-china #target,
+body.theme-china #title {
+  color: #ffde00; }
+
+body.theme-europe {
+  background: #039; }
+
+body.theme-europe #countdown,
+body.theme-europe #target,
+body.theme-europe #title {
+  color: #ffcc00; }
+
+body.theme-cola {
+  background: #f40009; }
+
+body.theme-cola #countdown,
+body.theme-cola #target,
+body.theme-cola #title {
+  color: #fff; }
+
+body.theme-usa {
+  background: #fff; }
+
+body.theme-usa #countdown {
+  color: #b22234; }
+
+body.theme-usa #target,
+body.theme-usa #title {
+  color: #3c3b6e; }
+
+body.theme-winter {
+  background: #001D29;
+  color: #93B8C2; }
+
+body.theme-winter #target {
+  color: #236475; }
+
+body.theme-winter #countdown {
+  color: #DCEFF5; }
+
+body.theme-summer {
+  background: #FFD6A0;
+  color: #ACBD86; }
+
+body.theme-summer #target {
+  color: #28544B; }
+
+body.theme-summer #countdown {
+  color: #FF302C; }
