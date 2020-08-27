@@ -130,7 +130,7 @@ setInterval(() => {
     if (days > 999) {
       days = 999;
     }
-    countdown = days + 'd&#8199;';
+    countdown = days + 'd&#8201;';
     document.getElementById('countdown').classList.className = '';
   } else {
     document.getElementById('countdown').classList.className = 'no-days';
