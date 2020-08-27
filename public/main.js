@@ -52,9 +52,25 @@ document.onkeydown = function(e) {
       // left arrow
       nextTheme();
       break;
+    case 38:
+      // up arrow
+      if (shift) {
+        config.to.setDate(config.to.getDate() + 1);
+      } else {
+        config.to.setHours(config.to.getHours() + 1);
+      }
+      break;
     case 39:
       // right arrow
       nextTheme();
+      break;
+    case 40:
+      // down arrow
+      if (shift) {
+        config.to.setDate(config.to.getDate() - 1);
+      } else {
+        config.to.setHours(config.to.getHours() - 1);
+      }
       break;
   }
   return true;
