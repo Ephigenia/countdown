@@ -34,7 +34,6 @@
     "npm": ">6.14.11"
   },
   "scripts": {
-    "build": "npm run -s build:css",
     "build:css": "node-sass --output-style compressed public/styles.scss > public/styles.css",
     "watch": "node-sass --output-style compressed --watch ./public --output ./public",
     "postversion": "git push && git push --tags",
